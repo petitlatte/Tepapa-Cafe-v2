@@ -1,0 +1,155 @@
+@charset"UTF-8";
+
+:root{
+	--main-color: #67a943;
+	--light-color: #f9f9f2;
+	--dark-color: #333333;
+	--max-width:1000px;
+	--text-bright-color: #fff;
+}
+
+body{
+	padding:0;
+	margin:0;
+	background-color: var(--light-color);
+	width: 100vw;
+	font-family: 'Assistant', sans-serif;
+}
+
+.btn_order{
+	display:inline-block;
+	margin-top: 20px;
+	padding: 10px 30px;
+	border: solid 2px currentColor;
+	border-radius: 6px;
+	background-color: var(--main-color);
+	color:#fff;
+	color: var(--text-bright-color);
+	text-decoration: none;
+}
+
+.btn_order:hover{
+	background-color: #333333;
+	background-color: var(--dark-color);
+	transition: 0.5s ease;
+
+}
+
+header{
+	padding-top:20px;
+}
+
+header h1{
+	padding-bottom: 30px;
+	margin:0;
+	text-align: center;
+	color:#333333;
+	color: var(--dark-color);
+	font-size:15vw;
+	font-family: 'Berkshire Swash', cursive;
+}
+
+
+.navA{
+	z-index: 100;
+	width:100%;
+	background-color: var(--main-color);
+	box-shadow: 1px 2px 3px #ddd;
+}
+
+.navA ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.navA a{
+	display:block;
+	padding:15px;
+	color: #fff;
+	color: var(--text-bright-color);
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+
+/*////////// CON-B THE MENU LISTINGS //////////*/
+
+.conB h1{
+	margin-top:0;
+	font-size:48px;
+	color: var(--main-color);
+}
+
+.conB .container{
+	border-radius: 5px;
+	padding-top: 30px;
+	display:block;
+	margin: 0 auto;
+	width: 80%;
+	min-height:450px;
+	background-color: white;
+	text-align: center;
+	box-shadow: 1px 2px 3px #ddd;
+}
+
+.conB .container article{
+	border: 1px solid #333333;
+	display:block;
+	margin: 0 auto;
+	max-width: var(--max-width);
+	padding-top:20px;
+	padding-bottom:30px;
+	line-height: 1.8;
+}
+
+.conB .container img{
+	width: 100px;
+}
+
+.headC{
+	margin-left: 10px;
+	padding:0;
+	border:none;
+	outline:none;
+	background: none;
+	font-size:28px;
+	cursor:pointer;
+}
+
+.conB .container .menudiv {
+	width: 80%;
+	height:2px;
+	background: var(--main-color);
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 768px){
+
+	h1{
+		font-size: 115px;
+	}
+	header h1{
+		font-size: 60px;
+	}
+
+	.headC{
+		display: none;
+	}
+	
+	.navA ul{
+		display:flex;
+		align-items: center;
+		justify-content:center;
+		max-width:1000px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
