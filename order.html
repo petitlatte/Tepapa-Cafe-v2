@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<title>Confirm your order</title>
+</head>
+
+<div class = "conC">
+		<h2>Confirm your order</h2>
+		<hr>
+<div class = "container">
+
+		    	<div id="cart">
+            		<div id="CartContainer">
+                		<div id="template" class="product">
+                			<!--Inside the cart-->
+                			<div class = "row">
+                			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                			<h4 class="product_title"></h4>
+                			<p>Sub-Total: $<span class="sub_price"></span></p>
+                			</div>
+                			<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7"> </div>
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+				                <p>Qty:<span class="product_quantity"></span></p>
+				            </div>
+						</div>
+					</div>
+							<!--end cart-->
+							<div class ="container-bug-fix">
+			                <p class="sub_price"></p>
+		                     <p><span class="product_price hidden"></span></p>
+		                     <p>Total: $<span class="priceCount"></span></p>
+							<p>No. of items: <span class="cartCount"></span></p>
+					</div>
+
+                	</div>
+				</div>
+</div>	
+
+<!-- ////////// CART CONTENT END  //////////-->
+        <div class="modal-footer">
+         <p><span class="product_price hidden"></span></p>
+			<p>Total $<span class="priceCount"></span></p>
+			<p>No. of items=<span class="cartCount"></span></p>
+<!--         	<button id="clear" class="btn btn-default">Clear Cart</button> -->
+			<a href= "main.html"> <button type="button" class="btn btn-default">Back to Menu</button></a>
+			<a href= "completeorder.html"><button class = "btn_finish">Complete Order</button></a>
+	    </div>
+</div>
+</div>
+
+
+	<!--SCRIPT-->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/ec32a4b21b.js"></script>
+<script type="text/javascript" src = "js/script.js"></script>
+<script type="text/javascript" src = "js/cart.js"></script>
